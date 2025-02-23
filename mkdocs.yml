@@ -46,7 +46,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Início: desafio.md
+  - Desafio: desafio.md
   - Visão do Produto: visao-do-produto.md
   - Especificação de Requisitos de Software: srs.md
   - Requisitos levantados: 
