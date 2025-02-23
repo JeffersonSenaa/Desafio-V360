@@ -46,4 +46,13 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Início: index.md
+  - Início: desafio.md
+  - Visão do Produto: visao-do-produto.md
+  - Especificação de Requisitos de Software: srs.md
+  - Requisitos levantados: 
+    - Requisitos Funcionais: requisitos-funcionais.md
+    - Requisitos Não Funcionais: requisitos-nao-funcionais.md
+    - Perfil do Usuário: desafio.md
+  - Macrocronograma: 
+    - User Story: user-story.md
+    - Macrocronograma: macrocronograma.md
