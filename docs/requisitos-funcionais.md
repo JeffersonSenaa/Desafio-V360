@@ -90,3 +90,57 @@ O sistema deve possuir área de agendamento com horários disponíveis.
 Critérios de Aceitação:
 
 - O agendamento possui campos de inserção dos dados da entrega, veículo e seleção de horários disponíveis.
+
+
+## Associação do RF com as Personas
+
+**Supervisor de Recebimento** </br>
+Problemas: 
+
+- Falta de organização no pátio e docas, causando congestionamento ou ociosidade.
+- Desconhecimento sobre a chegada dos caminhões, impactando a produtividade.
+- Dificuldades para descarregar os caminhões de forma eficiente.
+
+**Requisitos que solucionam o problema:**
+
+| **RF** | **Descrição** | **Justificativa** |
+|--------|-------------|------------------|
+| **RF02** | Controlar a chegada de Entregas | Garantir a visibilidade sobre quais caminhões estão chegando ou quando chegarão. |
+| **RF03** | Controlar a ocupação no Pátio e Docas | Evita superlotação ou ociosidade, melhorando o fluxo. |
+| **RF05** | Monitorar o Tempo Médio de Descarregamento | Ajudar a otimização do processo de descarregamento, reduzindo atrasos. |
+| **RF06** | Controlar os Fornecimentos sem Aviso Prévio | Permitir realocação rápida de espaço e recursos para entregas inesperadas. |
+
+
+**Analista de Suprimentos** </br>
+Problemas:
+
+- Falta de visibilidade sobre os agendamentos de entrega.
+- Materiais chegando fora do horário previsto ou fora do expediente.
+- Problemas com armazenamento e custos extras devido à falta de controle.
+
+**Requisitos que solucionam o problema:**
+
+| **RF** | **Descrição** | **Justificativa** |
+|--------|-------------|------------------|
+| **RF01** | Controlar o Agendamento de Entregas | Garantir que as entregas sejam programadas de forma eficiente. |
+| **RF04** | Gerenciar as Entregas Dentro do Expediente | Evitar as entregas fora do horário, reduzindo custos extras e desorganização. |
+| **RF07** | Monitorar as Entregas em Tempo Real | Visibilidade sobre o status das entregas, permitindo melhor planejamento. |
+| **RF08** | Notificar e Alertar Automaticamente mudanças em status | Ajudar a reagir rapidamente a alterações nos agendamentos e minimizar impactos. |
+
+
+**Coordenador de Logística** </br>
+Problemas:
+
+- Falta de um sistema de agendamento e monitoramento das entregas.
+- Congestionamento no pátio e desorganização dos recursos devido à falta de planejamento.
+- Impacto no tempo de espera dos motoristas e aumento dos custos operacionais.
+
+**Requisitos que solucionam o problema:**
+
+| **RF** | **Descrição** | **Justificativa** |
+|--------|-------------|------------------|
+| **RF01** | Controlar Agendamento de Entregas | Permite distribuir as entregas ao longo do dia e evitar congestionamento. |
+| **RF02** | Controlar chegada de Entregas | Dá visibilidade antecipada sobre quais caminhões estão chegando. |
+| **RF03** | Controlar ocupação no Pátio e Docas | Evita sobrecarga ou ociosidade dos espaços de descarga. |
+| **RF06** | Controlar Fornecimentos sem Aviso Prévio | Minimiza impactos das entregas não planejadas. |
+| **RF07** | Monitorar Entregas em Tempo Real | Permite acompanhar o fluxo de entregas e tomar decisões rápidas. |
