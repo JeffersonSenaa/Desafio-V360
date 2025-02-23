@@ -54,12 +54,12 @@ Tabela de priorização utilizando MoSCoW, baseada na quantidade de **RFs cobert
 |---------------|---------------|----------|----------------|
 | **US01** - Agendar uma entrega | 2 (RF01, RF09) | **Must Have** | Essencial para iniciar qualquer planejamento logístico. |
 | **US02** - Controlar agendamentos | 2 (RF01, RF09) | **Must Have** | Sem essa funcionalidade, não há controle sobre os horários. |
-| **US03** - Monitorar entregas em tempo real | 3 (RF02, RF03, RF07) | **Should Have** | Importante para otimizar o fluxo, mas o sistema pode operar sem isso no MVP. |
+| **US03** - Monitorar entregas em tempo real | 3 (RF02, RF03, RF07) | **Must Have** | Importante para otimizar o fluxo, mas o sistema pode operar sem isso no MVP. |
 | **US04** - Notificação de mudanças | 2 (RF02, RF08) | **Should Have** | Facilita o acompanhamento, mas não bloqueia o funcionamento do sistema. |
 | **US05** - Ocupação do pátio e docas | 1 (RF03) | **Could Have** | Agrega valor, mas não é essencial para as operações iniciais. |
 | **US06** - Gerenciar chegada de entregas | 3 (RF02, RF03, RF06) | **Must Have** | Fundamental para evitar atrasos e superlotação. |
 | **US07** - Monitorar tempo de descarregamento | 2 (RF05, RF07) | **Should Have** | Melhora eficiência, mas pode ser adicionado depois. |
-| **US08** - Fornecimentos sem aviso prévio | 2 (RF03, RF06) | **Should Have** | Útil para situações imprevisíveis, mas não é crítico. |
+| **US08** - Fornecimentos sem aviso prévio | 2 (RF03, RF06) | **Must Have** | Útil para situações imprevisíveis, mas não é crítico. |
 | **US09** - Gerenciar entregas fora do expediente | 1 (RF04) | **Could Have** | Específico para exceções, não é prioritário para o MVP. |
 
 
