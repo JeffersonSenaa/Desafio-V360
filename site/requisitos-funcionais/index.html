@@ -1,0 +1,1104 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../srs/">
+      
+      
+        <link rel="next" href="../requisitos-nao-funcionais/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Requisitos Funcionais - Desafio V360</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f615399.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.649f08f9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requisitos-funcionais" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Desafio V360" class="md-header__button md-logo" aria-label="Desafio V360" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Desafio V360
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Requisitos Funcionais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JeffersonSenaa/Desafio-V360" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Desafio-V360
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../desafio/" class="md-tabs__link">
+        
+  
+    
+  
+  Desafio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../visao-do-produto/" class="md-tabs__link">
+        
+  
+    
+  
+  Visão do Produto
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../srs/" class="md-tabs__link">
+        
+  
+    
+  
+  Especificação de Requisitos de Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Requisitos levantados
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../user-story/" class="md-tabs__link">
+          
+  
+  Macrocronograma
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Desafio V360" class="md-nav__button md-logo" aria-label="Desafio V360" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Desafio V360
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JeffersonSenaa/Desafio-V360" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Desafio-V360
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../desafio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desafio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-do-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../srs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação de Requisitos de Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Requisitos levantados
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Requisitos levantados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-requisitos" class="md-nav__link">
+    Tabela de Requisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-dos-requisitos-e-criterios-de-aceitacao" class="md-nav__link">
+    Descrição dos Requisitos e Critérios de Aceitação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf01-controlar-agendamento-de-entregas" class="md-nav__link">
+    RF01 - Controlar Agendamento de Entregas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf02-controlar-chegada-de-entregas" class="md-nav__link">
+    RF02 - Controlar chegada de Entregas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf03-controlar-ocupacao-no-patio-e-docas" class="md-nav__link">
+    RF03 - Controlar ocupação no Pátio e Docas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf04-gerenciar-entregas-dentro-do-expediente" class="md-nav__link">
+    RF04 - Gerenciar Entregas Dentro do Expediente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf05-monitorar-tempo-medio-de-descarregamento" class="md-nav__link">
+    RF05 - Monitorar Tempo Médio de Descarregamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf06-controlar-fornecimentos-sem-aviso-previo" class="md-nav__link">
+    RF06 - Controlar Fornecimentos sem Aviso Prévio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf07-monitorar-entregas-em-tempo-real" class="md-nav__link">
+    RF07 - Monitorar Entregas em Tempo Real
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf08-notificar-e-alertar-automaticamente-mudancas-em-status" class="md-nav__link">
+    RF08 - Notificar e Alertar Automaticamente mudanças em status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf09-agendar-entrega" class="md-nav__link">
+    RF09 - Agendar Entrega
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associacao-do-rf-com-as-personas" class="md-nav__link">
+    Associação do RF com as Personas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requisitos-nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Macrocronograma
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Macrocronograma
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-story/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macrocronograma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Macrocronograma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-requisitos" class="md-nav__link">
+    Tabela de Requisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descricao-dos-requisitos-e-criterios-de-aceitacao" class="md-nav__link">
+    Descrição dos Requisitos e Critérios de Aceitação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf01-controlar-agendamento-de-entregas" class="md-nav__link">
+    RF01 - Controlar Agendamento de Entregas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf02-controlar-chegada-de-entregas" class="md-nav__link">
+    RF02 - Controlar chegada de Entregas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf03-controlar-ocupacao-no-patio-e-docas" class="md-nav__link">
+    RF03 - Controlar ocupação no Pátio e Docas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf04-gerenciar-entregas-dentro-do-expediente" class="md-nav__link">
+    RF04 - Gerenciar Entregas Dentro do Expediente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf05-monitorar-tempo-medio-de-descarregamento" class="md-nav__link">
+    RF05 - Monitorar Tempo Médio de Descarregamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf06-controlar-fornecimentos-sem-aviso-previo" class="md-nav__link">
+    RF06 - Controlar Fornecimentos sem Aviso Prévio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf07-monitorar-entregas-em-tempo-real" class="md-nav__link">
+    RF07 - Monitorar Entregas em Tempo Real
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf08-notificar-e-alertar-automaticamente-mudancas-em-status" class="md-nav__link">
+    RF08 - Notificar e Alertar Automaticamente mudanças em status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rf09-agendar-entrega" class="md-nav__link">
+    RF09 - Agendar Entrega
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associacao-do-rf-com-as-personas" class="md-nav__link">
+    Associação do RF com as Personas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="requisitos-funcionais">Requisitos Funcionais</h1>
+<p>Foram levantados e analisados os requisitos da solução afim de solucionar os problemas encontrados no fluxo de tarefas atual. Com isso, este produto propõe melhorias e qualidade nos processos realizados no centro de distribuição.</p>
+<h2 id="tabela-de-requisitos">Tabela de Requisitos</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Requisito</th>
+<th style="text-align: center;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">RF01</td>
+<td style="text-align: center;">Controlar Agendamento de Entregas</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF02</td>
+<td style="text-align: center;">Controlar chegada de Entregas</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF03</td>
+<td style="text-align: center;">Controlar ocupação no Pátio e Docas</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF04</td>
+<td style="text-align: center;">Gerenciar Entregas Dentro do Expediente</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF05</td>
+<td style="text-align: center;">Monitorar Tempo Médio de Descarregamento</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF06</td>
+<td style="text-align: center;">Controlar Fornecimentos sem Aviso Prévio</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF07</td>
+<td style="text-align: center;">Monitorar Entregas em Tempo Real</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF08</td>
+<td style="text-align: center;">Notificar e Alertar Automaticamente mudanças em status</td>
+</tr>
+<tr>
+<td style="text-align: center;">RF09</td>
+<td style="text-align: center;">Agendar Entrega</td>
+</tr>
+</tbody>
+</table>
+<h2 id="descricao-dos-requisitos-e-criterios-de-aceitacao">Descrição dos Requisitos e Critérios de Aceitação</h2>
+<h2 id="rf01-controlar-agendamento-de-entregas">RF01 - Controlar Agendamento de Entregas</h2>
+<p>O sistema deve Controlar o Agendamento de Entregas obtendo gerenciamento eficaz considerando a capacidade do pátio e das docas.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>Bloqueio de agendamento quando superado a capacidade do pátio e docas no horário selecionado.</li>
+<li>Notificação de agendamento ao fornecedor e equipe responsável pelo recebimento.</li>
+</ul>
+<h2 id="rf02-controlar-chegada-de-entregas">RF02 - Controlar chegada de Entregas</h2>
+<p>O sistema deve registrar e monitorar a chegada de caminhões ao CD notificando os responsáveis e garantindo que há vaga no pátio ou docas.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema atualiza o status quando um caminhão chega ao CD ou encerra o descarregamento.</li>
+<li>O sistema alerta aos responsáveis quando chega caminhões sem agendamento.</li>
+<li>O sistema exibe a lista de caminhões que chegaram e estão aguardando para descarregar.</li>
+</ul>
+<h2 id="rf03-controlar-ocupacao-no-patio-e-docas">RF03 - Controlar ocupação no Pátio e Docas</h2>
+<p>O sistema deve monitorar a disponibilidade e ocupação do pátio e das docas em tempo real sinalizando congestionamentos e sugerindo redistribuição de cargas evitando gargalos.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema exibe em tempo real a ocupação do pátio e docas com taxa de ocupação. Exemplo: Pátio e docas 80% ocupados.</li>
+<li>O sistema alerta os supervisores para quando a capacidade máxima estiver próxima de ser atingida.</li>
+</ul>
+<h2 id="rf04-gerenciar-entregas-dentro-do-expediente">RF04 - Gerenciar Entregas Dentro do Expediente</h2>
+<p>O sistema deve restringir ou alertar sobre entregas que estejam fora do horário comercial mas possibilitando exceções como entregas urgentes.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O campo de horários no agendamento deve se restringir apenas a horários comerciais.</li>
+<li>Quando pressionado opção de urgência é possível selecionar horário fora do horário comercial.</li>
+</ul>
+<h2 id="rf05-monitorar-tempo-medio-de-descarregamento">RF05 - Monitorar Tempo Médio de Descarregamento</h2>
+<p>O sistema deve calcular e armazenar tempos médios de descarregamento para otimizar a gestão logística e gerenciamento dos agendamentos.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema calcula o tempo de descarregamento desde o inicio do processo até a conclusão.</li>
+<li>O sistema gera relatórios mensais sobre os tempos médios de descarregamento.</li>
+<li>O sistema permite visualizar estatísticas de tempo médio por fornecedor e tipo de carga.</li>
+</ul>
+<h2 id="rf06-controlar-fornecimentos-sem-aviso-previo">RF06 - Controlar Fornecimentos sem Aviso Prévio</h2>
+<p>O sistema deve registrar e tratar entregas inesperadas possibilitando um plano de contingência  que otimize o recebimento desses caminhões.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema notifica os responsáveis sobre uma entrega inesperada.</li>
+<li>O sistema permite realocar recursos para descarregar a carga imprevista.</li>
+</ul>
+<h2 id="rf07-monitorar-entregas-em-tempo-real">RF07 - Monitorar Entregas em Tempo Real</h2>
+<p>O sistema deve permitir que os usuários acompanhem o status das entregas em tempo real disponibilizando dashboards com informações sobre entregas em andamento, concluídas e atrasadas.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema exibe um dashboard com as entregas em andamento, concluídas e pendentes.</li>
+<li>O dashboard possui um campo de filtro de entregas por fornecedor, status e horário.</li>
+<li>O sistema atualiza automaticamente o status das entregas conforme a chegada e descarregamento dos caminhões. </li>
+</ul>
+<h2 id="rf08-notificar-e-alertar-automaticamente-mudancas-em-status">RF08 - Notificar e Alertar Automaticamente mudanças em status</h2>
+<p>O sistema deve enviar notificações de alertas para supervisores e motoristas sobre eventuais mudanças de status ou problemas nas entregas.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O sistema envia notificações por pop-up quando uma entrega está a caminho ou atrasada.</li>
+<li>O sistema envia notificações por pop-up sobre mudanças de horário no agendamento seja ao fornecedor ou supervisor.</li>
+</ul>
+<h2 id="rf09-agendar-entrega">RF09 - Agendar Entrega</h2>
+<p>O sistema deve possuir área de agendamento com horários disponíveis.</p>
+<p>Critérios de Aceitação:</p>
+<ul>
+<li>O agendamento possui campos de inserção dos dados da entrega, veículo e seleção de horários disponíveis.</li>
+</ul>
+<h2 id="associacao-do-rf-com-as-personas">Associação do RF com as Personas</h2>
+<p><strong>Supervisor de Recebimento</strong> </br>
+Problemas: </p>
+<ul>
+<li>Falta de organização no pátio e docas, causando congestionamento ou ociosidade.</li>
+<li>Desconhecimento sobre a chegada dos caminhões, impactando a produtividade.</li>
+<li>Dificuldades para descarregar os caminhões de forma eficiente.</li>
+</ul>
+<p><strong>Requisitos que solucionam o problema:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>RF</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Justificativa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RF02</strong></td>
+<td>Controlar a chegada de Entregas</td>
+<td>Garantir a visibilidade sobre quais caminhões estão chegando ou quando chegarão.</td>
+</tr>
+<tr>
+<td><strong>RF03</strong></td>
+<td>Controlar a ocupação no Pátio e Docas</td>
+<td>Evita superlotação ou ociosidade, melhorando o fluxo.</td>
+</tr>
+<tr>
+<td><strong>RF05</strong></td>
+<td>Monitorar o Tempo Médio de Descarregamento</td>
+<td>Ajudar a otimização do processo de descarregamento, reduzindo atrasos.</td>
+</tr>
+<tr>
+<td><strong>RF06</strong></td>
+<td>Controlar os Fornecimentos sem Aviso Prévio</td>
+<td>Permitir realocação rápida de espaço e recursos para entregas inesperadas.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analista de Suprimentos</strong> </br>
+Problemas:</p>
+<ul>
+<li>Falta de visibilidade sobre os agendamentos de entrega.</li>
+<li>Materiais chegando fora do horário previsto ou fora do expediente.</li>
+<li>Problemas com armazenamento e custos extras devido à falta de controle.</li>
+</ul>
+<p><strong>Requisitos que solucionam o problema:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>RF</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Justificativa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RF01</strong></td>
+<td>Controlar o Agendamento de Entregas</td>
+<td>Garantir que as entregas sejam programadas de forma eficiente.</td>
+</tr>
+<tr>
+<td><strong>RF04</strong></td>
+<td>Gerenciar as Entregas Dentro do Expediente</td>
+<td>Evitar as entregas fora do horário, reduzindo custos extras e desorganização.</td>
+</tr>
+<tr>
+<td><strong>RF07</strong></td>
+<td>Monitorar as Entregas em Tempo Real</td>
+<td>Visibilidade sobre o status das entregas, permitindo melhor planejamento.</td>
+</tr>
+<tr>
+<td><strong>RF08</strong></td>
+<td>Notificar e Alertar Automaticamente mudanças em status</td>
+<td>Ajudar a reagir rapidamente a alterações nos agendamentos e minimizar impactos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Coordenador de Logística</strong> </br>
+Problemas:</p>
+<ul>
+<li>Falta de um sistema de agendamento e monitoramento das entregas.</li>
+<li>Congestionamento no pátio e desorganização dos recursos devido à falta de planejamento.</li>
+<li>Impacto no tempo de espera dos motoristas e aumento dos custos operacionais.</li>
+</ul>
+<p><strong>Requisitos que solucionam o problema:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>RF</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Justificativa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RF01</strong></td>
+<td>Controlar Agendamento de Entregas</td>
+<td>Permite distribuir as entregas ao longo do dia e evitar congestionamento.</td>
+</tr>
+<tr>
+<td><strong>RF02</strong></td>
+<td>Controlar chegada de Entregas</td>
+<td>Dá visibilidade antecipada sobre quais caminhões estão chegando.</td>
+</tr>
+<tr>
+<td><strong>RF03</strong></td>
+<td>Controlar ocupação no Pátio e Docas</td>
+<td>Evita sobrecarga ou ociosidade dos espaços de descarga.</td>
+</tr>
+<tr>
+<td><strong>RF06</strong></td>
+<td>Controlar Fornecimentos sem Aviso Prévio</td>
+<td>Minimiza impactos das entregas não planejadas.</td>
+</tr>
+<tr>
+<td><strong>RF07</strong></td>
+<td>Monitorar Entregas em Tempo Real</td>
+<td>Permite acompanhar o fluxo de entregas e tomar decisões rápidas.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
