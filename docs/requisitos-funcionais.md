@@ -2,6 +2,20 @@
 
 Foram levantados e analisados os requisitos da solução afim de solucionar os problemas encontrados no fluxo de tarefas atual. Com isso, este produto propõe melhorias e qualidade nos processos realizados no centro de distribuição.
 
+## Tabela de Requisitos
+| Requisito | Descrição |
+| :---:     | :-------: |
+| RF01 | Controlar Agendamento de Entregas |
+| RF02 | Controlar chegada de Entregas |
+| RF03 | Controlar ocupação no Pátio e Docas |
+| RF04 | Gerenciar Entregas Dentro do Expediente |
+| RF05 | Monitorar Tempo Médio de Descarregamento |
+| RF06 | Controlar Fornecimentos sem Aviso Prévio |
+| RF07 | Monitorar Entregas em Tempo Real |
+| RF08 | Notificar e Alertar Automaticamente mudanças em status |
+| RF09 | Agendar Entrega |
+
+## Descrição dos Requisitos e Critérios de Aceitação
 
 ## RF01 - Controlar Agendamento de Entregas
 O sistema deve Controlar o Agendamento de Entregas obtendo gerenciamento eficaz considerando a capacidade do pátio e das docas.
@@ -36,8 +50,8 @@ Critérios de Aceitação:
 - O campo de horários no agendamento deve se restringir apenas a horários comerciais.
 - Quando pressionado opção de urgência é possível selecionar horário fora do horário comercial.
 
-## RF05 - Gerenciar Tempo Médio de Descarregamento
-O sistema deve calcular e armazenar tempos médios de descarregamento para otimização e gerenciamento dos agendamentos.
+## RF05 - Monitorar Tempo Médio de Descarregamento
+O sistema deve calcular e armazenar tempos médios de descarregamento para otimizar a gestão logística e gerenciamento dos agendamentos.
 
 Critérios de Aceitação:
 
