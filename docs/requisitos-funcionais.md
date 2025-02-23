@@ -2,6 +2,7 @@
 
 Foram levantados e analisados os requisitos da solução afim de solucionar os problemas encontrados no fluxo de tarefas atual. Com isso, este produto propõe melhorias e qualidade nos processos realizados no centro de distribuição.
 
+
 ## RF01 - Controlar Agendamento de Entregas
 O sistema deve Controlar o Agendamento de Entregas obtendo gerenciamento eficaz considerando a capacidade do pátio e das docas.
 
@@ -68,3 +69,10 @@ Critérios de Aceitação:
 
 - O sistema envia notificações por pop-up quando uma entrega está a caminho ou atrasada.
 - O sistema envia notificações por pop-up sobre mudanças de horário no agendamento seja ao fornecedor ou supervisor.
+
+## RF09 - Agendar Entrega
+O sistema deve possuir área de agendamento com horários disponíveis.
+
+Critérios de Aceitação:
+
+- O agendamento possui campos de inserção dos dados da entrega, veículo e seleção de horários disponíveis.
