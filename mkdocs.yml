@@ -9,14 +9,12 @@ theme:
     repo: fontawesome/brands/github
   palette: 
     - scheme: default
-      primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
 
     - scheme: slate
-      primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -43,7 +41,7 @@ markdown_extensions:
 #   - git-revision-date-localized
 
 extra_css:
-  - stylesheets/extra.css
+  - site/stylesheets/extra.css
 
 nav:
   - Home: index.md
