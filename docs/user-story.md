@@ -45,7 +45,7 @@ Segue a matriz de rastreabilidade completa, relacionando os requisitos (colunas)
 | **US09** - Gerenciar entregas fora do expediente |   |   |   | ✔    |   |   |   |   |   |  
 
 ## MosCow - Priorização
-Foi priorizado as US's que mais contemplam os requisitos.
+Priorização das US's que mais contemplam os requisitos.
 
 Tabela de priorização utilizando MoSCoW, baseada na quantidade de **RFs cobertos** por cada **User Story (US)**. A principal métrica utilizada fé o número de Requisitos atendidos por cada US.
 
@@ -67,3 +67,8 @@ Tabela de priorização utilizando MoSCoW, baseada na quantidade de **RFs cobert
 ## Modelagem
 <center>
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIagfK8k=/?moveToViewport=-2892,-2332,6730,3375&embedId=39056193675" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe></center>
+
+
+</br>
+</br>
+</br>

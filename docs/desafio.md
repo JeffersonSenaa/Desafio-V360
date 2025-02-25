@@ -1,4 +1,4 @@
-# Desafio Técnico
+# Case Técnico V360 - Funcional em Sistemas
 
 A empresa Tecnologia TOP foi contratada por um cliente do setor industrial para desenvolver uma ferramenta que fizesse o controle dos agendamentos de entregas no seu Centro de Distribuição (CD). Tudo aquilo que é comprado para ser usado no processo produtivo desta indústria deve ser entregue no CD, mas eles têm pouca, ou quase nenhuma, visibilidade sobre quando os materiais serão entregues e se terão capacidade em seu pátio e docas de realizar o recebimento.
 Abaixo alguns relatos de usuários que são impactados por esse problema:
@@ -21,3 +21,8 @@ Elabore uma apresentação de 5 a 10 slides que contenham:
 - Proposta de solução e suas funcionalidades
 - Documentação funcional (anexo)
 - Macrocronograma de implantação
+
+
+</br>
+</br>
+</br>

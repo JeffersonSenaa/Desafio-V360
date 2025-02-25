@@ -28,3 +28,9 @@ Para consultas de status de entrega, o tempo de resposta deve ser igual ou infer
 
 ### RNF09 - Desempenho
 Para as páginas principais, o tempo de carregamento deve ser inferior a 3 segundos.
+
+
+
+</br>
+</br>
+</br>

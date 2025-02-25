@@ -144,3 +144,9 @@ Problemas:
 | **RF03** | Controlar ocupação no Pátio e Docas | Evita sobrecarga ou ociosidade dos espaços de descarga. |
 | **RF06** | Controlar Fornecimentos sem Aviso Prévio | Minimiza impactos das entregas não planejadas. |
 | **RF07** | Monitorar Entregas em Tempo Real | Permite acompanhar o fluxo de entregas e tomar decisões rápidas. |
+
+
+
+</br>
+</br>
+</br>

@@ -4,3 +4,6 @@ Processo de Desenvolvimento da solução proposta. Em cada Sprint, são desenvol
 
 ![macricronograma](./assets/Macrocronograma.png)
 
+</br>
+</br>
+</br>
