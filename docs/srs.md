@@ -1,4 +1,4 @@
-# Especificação de Requeisitos de Software
+# Especificação de Requisitos de Software
 
 ## 1. Introdução
 

@@ -23,13 +23,13 @@
 | US04 | Eu, como analista de suprimentos, desejo ser notificado por mudanças nos status das entregas para ter conhecimento do andamento da entrega. |
 | US05 | Eu, como supervisor de recebimento, desejo ter conhecimento da ocupação do pátio e docas do CD para ter controle sobre os recebimentos. |
 | US06 | Eu, como supervisor de recebimento, desejo gerenciar a chegada das entregas para garantir que não haja atrasos ou superlotação. |
-| US07 | Eu, como spervisor de Suprimentos, desejo monitorar o tempo médio de descarregamento para  melhorar a gestçao logística. |
+| US07 | Eu, como supervisor de Suprimentos, desejo monitorar o tempo médio de descarregamento para  melhorar a gestão logística. |
 | US08 | Eu, como supervisor de recebimento, desejo gerenciar fornecimentos sem aviso prévio para fazer realocações necessárias para capacidade do CD. |
 | US09 | Eu, como supervisor de recebimento, desejo gerenciar entregas fora do expediente para considerar apenas entregas urgentes nesses horários. |
 
 
 ## Matriz de Rastreabilidade US - RF
-Segue a matriz de rastreabilidade completa, relacionando os requisitos (colunas) com as funcionalidades (linhas). Cada célula indica se o requisito atende diretamente (✔) ou parcialmente (○).
+A seguir, apresenta-se a matriz de rastreabilidade completa, relacionando os requisitos (colunas) com as funcionalidades (linhas). Cada célula indica se o requisito atende diretamente (✔) ou parcialmente (○).
 
 
 | US / RF                   | RF01| RF02| RF03| RF04| RF05| RF06| RF07| RF08| RF09|
@@ -45,9 +45,9 @@ Segue a matriz de rastreabilidade completa, relacionando os requisitos (colunas)
 | **US09** - Gerenciar entregas fora do expediente |   |   |   | ✔    |   |   |   |   |   |  
 
 ## MosCow - Priorização
-Priorização das US's que mais contemplam os requisitos.
+Priorização das US que mais contemplam os requisitos.
 
-Tabela de priorização utilizando MoSCoW, baseada na quantidade de **RFs cobertos** por cada **User Story (US)**. A principal métrica utilizada fé o número de Requisitos atendidos por cada US.
+Tabela de priorização utilizando MoSCoW, baseada na quantidade de **RFs cobertos** por cada **User Story (US)**. A principal métrica utilizada foi o número de Requisitos atendidos por cada US.
 
 ###  Tabela de Priorização MoSCoW
 | **User Story** | **RFs Cobertos** | **MoSCoW** | **Justificativa** |
